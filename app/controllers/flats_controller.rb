@@ -21,7 +21,7 @@ class FlatsController < ApplicationController
 
   # POST /flats or /flats.json
   def create
-    @flat = Flat.new(flat_params)
+    @flat = Flat.new(params)
 
     respond_to do |format|
       if @flat.save
